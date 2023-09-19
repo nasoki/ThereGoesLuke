@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public static float moveSpeed = 1f;
+    public static float moveSpeed = 100f;
 
     private Rigidbody2D rb2d;
     private Vector2 moveVelocity = Vector2.zero;
@@ -74,7 +74,7 @@ public class CharacterMovement : MonoBehaviour
         {
             playerSpriteRenderer.flipX = true;
         }
-        rb2d.transform.Translate(-moveVelocity);
+        rb2d.transform.Translate(-moveVelocity * Time.deltaTime);
         animatorController.Play("Player_RunAnimation");
     }
     public void MoveRight()
@@ -85,12 +85,12 @@ public class CharacterMovement : MonoBehaviour
         {
             playerSpriteRenderer.flipX = false;
         }
-        rb2d.transform.Translate(moveVelocity);
+        rb2d.transform.Translate(moveVelocity * Time.deltaTime);
         animatorController.Play("Player_RunAnimation");
     }
     public void Jump()
     {
-        rb2d.AddForce(new Vector2(rb2d.velocity.x, jump));
+        rb2d.AddForce(new Vector2(rb2d.velocity.x, jump * Time.deltaTime));
         animatorController.Play("Player_JumpAnimation");
     }
 
