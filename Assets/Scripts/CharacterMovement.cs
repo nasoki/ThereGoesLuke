@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -33,11 +35,11 @@ public class CharacterMovement : MonoBehaviour
     private void Update()
     {
         Debug.Log(onGround);
-        if (Input.GetKey("a")/* || leftButtonActive == true*/) 
+        if (Input.GetKey("a") || leftButtonActive == true) 
         {
             MoveLeft();
         }
-        else if (Input.GetKey("d")/* || rightButtonActive == true*/) 
+        else if (Input.GetKey("d") || rightButtonActive == true) 
         {
             MoveRight();
         }
@@ -54,6 +56,15 @@ public class CharacterMovement : MonoBehaviour
                 Jump();
             }
         }
+    }
+
+    public void LeftPointerUp()
+    {
+        leftButtonActive = false;
+    }
+    public void RightPointerUp()
+    {
+        rightButtonActive = false;
     }
     public void MoveLeft()
     {
@@ -92,6 +103,7 @@ public class CharacterMovement : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-            onGround = false;
+        onGround = false;
     }
+
 }
