@@ -8,19 +8,15 @@ using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour
 {
-    public static float moveSpeed = 100f;
-
     private Rigidbody2D rb2d;
     private Vector2 moveVelocity = Vector2.zero;
     private SpriteRenderer playerSpriteRenderer;
     [SerializeField] private Animator animatorController;
     public bool leftButtonActive;
     public bool rightButtonActive;
+    public float moveSpeed = 100f;
     public float jump;
-    public float raycastDistance = 0.1f;
     public bool onGround;
-
-    
 
     private void Start()
     {
@@ -88,10 +84,15 @@ public class CharacterMovement : MonoBehaviour
         rb2d.transform.Translate(moveVelocity * Time.deltaTime);
         animatorController.Play("Player_RunAnimation");
     }
+    //jumping is not consistent
     public void Jump()
     {
-        rb2d.AddForce(new Vector2(rb2d.velocity.x, jump * Time.deltaTime));
-        animatorController.Play("Player_JumpAnimation");
+        if (onGround)
+        {
+            Debug.Log("jump pressed");
+            rb2d.AddForce(new Vector2(rb2d.velocity.x, jump * Time.deltaTime));
+            animatorController.Play("Player_JumpAnimation");
+        } 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
