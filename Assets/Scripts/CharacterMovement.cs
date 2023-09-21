@@ -106,5 +106,4 @@ public class CharacterMovement : MonoBehaviour
     {
         onGround = false;
     }
-
 }
