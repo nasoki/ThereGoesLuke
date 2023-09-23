@@ -84,6 +84,7 @@ public class CharacterMovement : MonoBehaviour
         rb2d.transform.Translate(moveVelocity * Time.deltaTime);
         animatorController.Play("Player_RunAnimation");
     }
+
     //jumping is not consistent
     public void Jump()
     {
