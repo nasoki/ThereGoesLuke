@@ -1,110 +1,103 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class CharacterMovement : MonoBehaviour
 {
-    private Rigidbody2D rb2d;
-    private Vector2 moveVelocity = Vector2.zero;
-    private SpriteRenderer playerSpriteRenderer;
-    [SerializeField] private Animator animatorController;
-    public bool leftButtonActive;
-    public bool rightButtonActive;
-    public float moveSpeed = 100f;
-    public float jump;
-    public bool onGround;
+    public float moveSpeed = 5.0f;
+    public float jumpForce = 10.0f;
+    private float horizontalMove;
+    private bool moveLeft;
+    private bool moveRight;
+    private bool isGrounded = false;
+    private Rigidbody2D rb;
+    [SerializeField] private Animator playerAC;
 
     private void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-        playerSpriteRenderer = GetComponent<SpriteRenderer>();
-        animatorController = GetComponent<Animator>();
-        moveVelocity.x = moveSpeed * Time.deltaTime;
-        leftButtonActive = false;
-        rightButtonActive = false;     
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
-    {
-        Debug.Log(onGround);
-        if (Input.GetKey("a") || leftButtonActive == true) 
+    {   
+        float moveInput = Input.GetAxis("Horizontal");
+        ButtonController();
+        //rb.velocity = new Vector2(moveInput * moveSpeed * Time.deltaTime, rb.velocity.y); // keyboard controls
+        rb.velocity = new Vector2(horizontalMove * Time.deltaTime, rb.velocity.y); //button controls
+        if (rb.velocity.x != 0)
         {
-            MoveLeft();
-        }
-        else if (Input.GetKey("d") || rightButtonActive == true) 
-        {
-            MoveRight();
+            playerAC.Play("Player_RunAnimation");
         }
         else
         {
-            rb2d.AddForce(Vector2.zero);
-            animatorController.Play("Player_IdleAnimation");
+            playerAC.Play("Player_IdleAnimation");
+        }
+        if (rb.velocity.x < 0 && GetComponent<SpriteRenderer>().flipX == false)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (rb.velocity.x > 0 && GetComponent<SpriteRenderer>().flipX == true)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        // Zýplama Kontrolü
+        if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            if (onGround)
-            {
-                Jump();
-            }
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            playerAC.Play("Player_JumpAnimation");
         }
     }
 
-    public void LeftPointerUp()
+    public void LBClick()
     {
-        leftButtonActive = false;
+        moveLeft = true;
     }
-    public void RightPointerUp()
+    public void LBRelease()
     {
-        rightButtonActive = false;
+        moveLeft = false;
     }
-    public void MoveLeft()
+    public void RBClick()
     {
-        rightButtonActive = false;
-        leftButtonActive = true;
-        if (playerSpriteRenderer.flipX == false)
-        {
-            playerSpriteRenderer.flipX = true;
-        }
-        rb2d.transform.Translate(-moveVelocity * Time.deltaTime);
-        animatorController.Play("Player_RunAnimation");
+        moveRight = true;
     }
-    public void MoveRight()
+    public void RBRelease()
     {
-        leftButtonActive = false;
-        rightButtonActive = true;
-        if (playerSpriteRenderer.flipX == true)
-        {
-            playerSpriteRenderer.flipX = false;
-        }
-        rb2d.transform.Translate(moveVelocity * Time.deltaTime);
-        animatorController.Play("Player_RunAnimation");
+        moveRight = false;
+    }
+    public void JumpButton()
+    {
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        playerAC.Play("Player_JumpAnimation");
     }
 
-    //jumping is not consistent
-    public void Jump()
+    private void ButtonController()
     {
-        if (onGround)
+        if (moveLeft)
         {
-            Debug.Log("jump pressed");
-            rb2d.AddForce(new Vector2(rb2d.velocity.x, jump * Time.deltaTime));
-            animatorController.Play("Player_JumpAnimation");
-        } 
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Platform"))
+            horizontalMove = -moveSpeed;
+        }
+        else if (moveRight)
         {
-            onGround = true;
+            horizontalMove = moveSpeed;
+        }
+        else
+        {
+            horizontalMove = 0;
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        onGround = false;
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
     }
 }

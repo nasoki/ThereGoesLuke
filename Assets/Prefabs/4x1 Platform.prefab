@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7137224018534246550}
   m_Layer: 0
   m_Name: Single
-  m_TagString: Platform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 2348365283961493138}
   m_Layer: 0
   m_Name: Single Right
-  m_TagString: Platform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 10607241157545653}
   m_Layer: 0
   m_Name: Single (1)
-  m_TagString: Platform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 7319700118784341987}
   m_Layer: 0
   m_Name: 4x1 Platform
-  m_TagString: Platform
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,7 +286,7 @@ Transform:
   - {fileID: 3776165836727581589}
   - {fileID: 2776228186061072036}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &7319700118784341987
 BoxCollider2D:
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 7917173755486516409}
   m_Layer: 0
   m_Name: Single Left
-  m_TagString: Platform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
