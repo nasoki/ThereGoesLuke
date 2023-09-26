@@ -32,9 +32,8 @@ public class PauseButton : MonoBehaviour
     }
     public void RestartButtonFunction()
     {
-        Scene currentLevel = SceneManager.GetActiveScene();
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
-        SceneManager.SetActiveScene(currentLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
