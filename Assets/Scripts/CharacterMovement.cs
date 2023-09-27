@@ -17,7 +17,8 @@ public class CharacterMovement : MonoBehaviour
     }
 
     private void Update()
-    {   
+    {
+        Debug.Log(isGrounded);
         float moveInput = Input.GetAxis("Horizontal");
         ButtonController();
         //rb.velocity = new Vector2(moveInput * moveSpeed * Time.deltaTime, rb.velocity.y); // keyboard controls
@@ -69,8 +70,11 @@ public class CharacterMovement : MonoBehaviour
     }
     public void JumpButton()
     {
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        //playerAC.Play("Player_JumpAnimation");
+        if (isGrounded)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            //playerAC.Play("Player_JumpAnimation");
+        }
     }
 
     private void ButtonController()
