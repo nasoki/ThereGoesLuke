@@ -26,6 +26,10 @@ public class CharacterMovement : MonoBehaviour
         {
             playerAC.Play("Player_RunAnimation");
         }
+        else if (!isGrounded)
+        {
+            playerAC.Play("Player_JumpAnimation");
+        }
         else
         {
             playerAC.Play("Player_IdleAnimation");
@@ -43,7 +47,7 @@ public class CharacterMovement : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            playerAC.Play("Player_JumpAnimation");
+            
         }
     }
 
@@ -66,7 +70,7 @@ public class CharacterMovement : MonoBehaviour
     public void JumpButton()
     {
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        playerAC.Play("Player_JumpAnimation");
+        //playerAC.Play("Player_JumpAnimation");
     }
 
     private void ButtonController()

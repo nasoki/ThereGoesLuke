@@ -15,4 +15,8 @@ public class MainMenuHandle : MonoBehaviour
     {
         
     }
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
 }
