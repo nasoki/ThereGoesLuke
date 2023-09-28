@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] private GameObject deathUI;
     [SerializeField] private Animator animatorController;
     private Rigidbody2D rb;
     public float moveSpeed = 2.0f;
@@ -21,6 +22,7 @@ public class EnemyController : MonoBehaviour
         rightmostPosition = originalPosition + new Vector2(moveDistance, 0);
         StartCoroutine(MoveLeftAndRight());
         rbSprite.flipX = true;
+        deathUI.SetActive(false);
     }
 
     private IEnumerator MoveLeftAndRight()
@@ -70,6 +72,14 @@ public class EnemyController : MonoBehaviour
                 movingRight = !movingRight;
             }
             yield return null;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            deathUI.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
