@@ -10,11 +10,18 @@ public class CharacterMovement : MonoBehaviour
     private bool moveRight;
     private bool isGrounded = false;
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
+    private BoxCollider2D boxCollider;
     [SerializeField] private Animator playerAC;
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        //offset.x ve size.x deðiþtir
+        boxCollider = GetComponent<BoxCollider2D>();
+
     }
 
     private void Update()
@@ -38,11 +45,11 @@ public class CharacterMovement : MonoBehaviour
         }
         if (rb.velocity.x < 0 && GetComponent<SpriteRenderer>().flipX == false)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            spriteRenderer.flipX = true;
         }
         else if (rb.velocity.x > 0 && GetComponent<SpriteRenderer>().flipX == true)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            spriteRenderer.flipX = false;
         }
 
         // Zýplama Kontrolü
@@ -82,6 +89,7 @@ public class CharacterMovement : MonoBehaviour
     {
         if (moveLeft)
         {
+            //boxCollider.offset = 
             horizontalMove = -moveSpeed;
         }
         else if (moveRight)
