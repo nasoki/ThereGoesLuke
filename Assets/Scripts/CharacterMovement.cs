@@ -13,15 +13,19 @@ public class CharacterMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
     [SerializeField] private Animator playerAC;
+    private float sizeX = 0.81f;
+    private float offsetX = 0.02f;
+    private Vector2 originalSize;
+    private Vector2 originalOffset;
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        //offset.x ve size.x deðiþtir
         boxCollider = GetComponent<BoxCollider2D>();
-
+        originalOffset = boxCollider.offset;
+        originalSize = boxCollider.size;
     }
 
     private void Update()
@@ -89,11 +93,14 @@ public class CharacterMovement : MonoBehaviour
     {
         if (moveLeft)
         {
-            //boxCollider.offset = 
+            boxCollider.offset = new Vector2 (offsetX, boxCollider.offset.y);
+            boxCollider.size = new Vector2(sizeX, boxCollider.size.y);
             horizontalMove = -moveSpeed;
         }
         else if (moveRight)
         {
+            boxCollider.offset = originalOffset;
+            boxCollider.size = originalSize;
             horizontalMove = moveSpeed;
         }
         else

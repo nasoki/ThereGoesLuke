@@ -19,6 +19,7 @@ public class PauseButton : MonoBehaviour
         
     }
 
+    //pause menu'yu diðer menular gibi yap
     public void PauseButtonFunction()
     {
         pauseMenu.SetActive(true);
