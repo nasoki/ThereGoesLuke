@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public TextMeshProUGUI scoreText; // Skor metni
+    public TextMeshProUGUI finalScoreText;
     public int score = 0; // Skor deðeri
 
     private void Awake()
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         UpdateScoreText();
+    }
+    private void Update()
+    {
+        finalScoreText.text = "You scored " + score + " points!";
     }
 
     public void AddScore(int amount)

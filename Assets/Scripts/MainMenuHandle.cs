@@ -12,7 +12,9 @@ public class MainMenuHandle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        levelsMenuGO.SetActive(false);
+        earthMenuGO.SetActive(false);
+        icicleMenuGO.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,5 +41,13 @@ public class MainMenuHandle : MonoBehaviour
     public void BeginEarth1()
     {
         SceneManager.LoadScene("earth1");
+    }
+    public void BeginEarth2()
+    {
+        SceneManager.LoadScene("earth2");
+    }
+    public void BeginEarth3()
+    {
+        SceneManager.LoadScene("earth3");
     }
 }

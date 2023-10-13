@@ -41,6 +41,7 @@ public class CharacterMovement : MonoBehaviour
         }
         else if (!isGrounded)
         {
+            
             playerAC.Play("Player_JumpAnimation");
         }
         else
