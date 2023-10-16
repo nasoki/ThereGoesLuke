@@ -17,6 +17,7 @@ public class CharacterMovement : MonoBehaviour
     private float offsetX = 0.02f;
     private Vector2 originalSize;
     private Vector2 originalOffset;
+    [SerializeField] private GameObject groundRayObject;
 
 
     private void Start()
@@ -57,11 +58,28 @@ public class CharacterMovement : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
+        RaycastHit2D hitGround = Physics2D.Raycast(groundRayObject.transform.position, Vector2.down);
+        if (hitGround.collider != null)
+        {
+            if (hitGround.distance <= 0.2)
+            {
+                isGrounded = true;
+            }
+            else
+            {
+                isGrounded = false;
+            }
+        }
+        
+        Debug.DrawRay(groundRayObject.transform.position,Vector2.down, Color.yellow);
         // Zýplama Kontrolü
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            
+        }
+        else
+        {
+            return;
         }
     }
 
@@ -107,22 +125,6 @@ public class CharacterMovement : MonoBehaviour
         else
         {
             horizontalMove = 0;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
         }
     }
 }
