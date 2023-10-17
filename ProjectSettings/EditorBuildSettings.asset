@@ -14,7 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/earth2.unity
     guid: 9f5c9487eb18a9e4890480276415769d
-  - enabled: 0
-    path: Assets/Scenes/earth3.unity
-    guid: 94c36f7f6691bd24ba3959d92df8b797
   m_configObjects: {}
