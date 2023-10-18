@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator MoveLeftAndRight()
     {
-        yield return new WaitForSeconds(5.0f); // Wait for 5 seconds before starting movement.
+        yield return new WaitForSeconds(3.0f); // Wait for 5 seconds before starting movement.
 
         while (true)
         {
@@ -41,11 +41,11 @@ public class EnemyController : MonoBehaviour
                 // Move to the right
                 rb.position = Vector2.MoveTowards(rb.position, rightmostPosition, moveSpeed * Time.deltaTime);
 
-                // If the enemy reaches the rightmost position, wait for 5 seconds
+                // If the enemy reaches the rightmost position, wait for 3 seconds
                 if (Vector2.Distance(rb.position, rightmostPosition) < 0.01f)
                 {
                     animatorController.Play("Enemy_Idle");
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(3.0f);
                 }
             }
             else
@@ -58,11 +58,11 @@ public class EnemyController : MonoBehaviour
                 // Move to the left
                 rb.position = Vector2.MoveTowards(rb.position, originalPosition, moveSpeed * Time.deltaTime);
 
-                // If the enemy reaches the original position, wait for 5 seconds
+                // If the enemy reaches the original position, wait for 3 seconds
                 if (Vector2.Distance(rb.position, originalPosition) < 0.01f)
                 {
                     animatorController.Play("Enemy_Idle");
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(3.0f);
                 }
             }
 

@@ -13,11 +13,12 @@ public class CharacterMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
     [SerializeField] private Animator playerAC;
-    private float sizeX = 0.81f;
-    private float offsetX = 0.02f;
+    private float sizeX = 0.77143f;
+    private float offsetX = -0.0227437f;
     private Vector2 originalSize;
     private Vector2 originalOffset;
     [SerializeField] private GameObject groundRayObject;
+    [SerializeField] private GameObject groundRayObject2;
 
 
     private void Start()
@@ -59,9 +60,10 @@ public class CharacterMovement : MonoBehaviour
         }
 
         RaycastHit2D hitGround = Physics2D.Raycast(groundRayObject.transform.position, Vector2.down);
-        if (hitGround.collider != null)
+        RaycastHit2D hitGround2 = Physics2D.Raycast(groundRayObject2.transform.position, Vector2.down);
+        if (hitGround.collider != null || hitGround2.collider != null)
         {
-            if (hitGround.distance <= 0.2)
+            if (hitGround.distance <= 0.2 || hitGround2.distance <= 0.2)
             {
                 isGrounded = true;
             }
@@ -72,6 +74,7 @@ public class CharacterMovement : MonoBehaviour
         }
         
         Debug.DrawRay(groundRayObject.transform.position,Vector2.down, Color.yellow);
+        Debug.DrawRay(groundRayObject2.transform.position, Vector2.down, Color.yellow);
         // Zýplama Kontrolü
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
