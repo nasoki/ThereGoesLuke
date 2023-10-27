@@ -27,11 +27,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1.0f;
         UpdateScoreText();
     }
-    private void Update()
-    {
-        finalScoreText.text = "You scored " + score + " points!";
-    }
-
     public void AddScore(int amount)
     {
         score += amount;
@@ -41,5 +36,9 @@ public class GameManager : MonoBehaviour
     private void UpdateScoreText()
     {
         scoreText.text = "Score " + score.ToString();
+    }
+    public void ShowFinalScore()
+    {
+        finalScoreText.text = "You scored " + score.ToString() + " points!";
     }
 }
