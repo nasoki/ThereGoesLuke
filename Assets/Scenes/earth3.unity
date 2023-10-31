@@ -29363,7 +29363,7 @@ GameObject:
   - component: {fileID: 1711997917}
   m_Layer: 0
   m_Name: HorizontalPlatform (1)
-  m_TagString: Untagged
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29381,7 +29381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  distance: 4.5
+  distance: 2
   initialDirectionRight: 1
 --- !u!61 &1711997918
 BoxCollider2D:
@@ -31109,6 +31109,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 8359166480797379590}
+    - target: {fileID: 4456331572325793142, guid: 03a74dbc623e1a641878273096037d71, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 1963691239}
     - target: {fileID: 7315400586994700369, guid: 03a74dbc623e1a641878273096037d71, type: 3}
       propertyPath: m_Name
       value: HorizontalPlatform
