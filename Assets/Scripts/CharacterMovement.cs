@@ -13,8 +13,8 @@ public class CharacterMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
     [SerializeField] private Animator playerAC;
-    private float sizeX = 0.77143f;
-    private float offsetX = -0.0227437f;
+    private float sizeX = 0.7714f;
+    private float offsetX = -0.02274f;
     private Vector2 originalSize;
     private Vector2 originalOffset;
     [SerializeField] private GameObject groundRayObject;

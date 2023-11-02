@@ -50,4 +50,8 @@ public class MainMenuHandle : MonoBehaviour
     {
         SceneManager.LoadScene("earth3");
     }
+    public void BeginEarth4()
+    {
+        SceneManager.LoadScene("earth4");
+    }
 }

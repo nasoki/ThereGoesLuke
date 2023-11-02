@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
 
     private IEnumerator MoveLeftAndRight()
     {
-        yield return new WaitForSeconds(3.0f); // Wait for 5 seconds before starting movement.
+        yield return new WaitForSeconds(2.0f); // Wait for 2 seconds before starting movement.
 
         while (true)
         {
