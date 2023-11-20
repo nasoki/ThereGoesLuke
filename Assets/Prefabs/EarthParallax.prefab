@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 8586012463811983725}
   - component: {fileID: 3200972033747913512}
   m_Layer: 0
-  m_Name: Parallax
+  m_Name: EarthParallax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
