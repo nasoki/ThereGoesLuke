@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/earth4.unity
     guid: cf45da003c327ce49a7a362f07f6901d
+  - enabled: 1
+    path: Assets/Scenes/icicle1.unity
+    guid: 6c2c26cced2a93b4ca2593404537f67f
   m_configObjects: {}

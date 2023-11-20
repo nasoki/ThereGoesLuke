@@ -54,4 +54,20 @@ public class MainMenuHandle : MonoBehaviour
     {
         SceneManager.LoadScene("earth4");
     }
+    public void BeginIcicle1()
+    {
+        SceneManager.LoadScene("icicle1");
+    }
+    public void BeginIcicle2()
+    {
+        SceneManager.LoadScene("icicle2");
+    }
+    public void BeginIcicle3()
+    {
+        SceneManager.LoadScene("icicle3");
+    }
+    public void BeginIcicle4()
+    {
+        SceneManager.LoadScene("icicle4");
+    }
 }
