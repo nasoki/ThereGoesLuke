@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7657728904951115006
 SpriteRenderer:
@@ -146,6 +146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValue: 100
   scoreText: {fileID: 0}
+  coinPickupSound: {fileID: 8300000, guid: 06d57507e25a5984894169b77aa3b3a6, type: 3}
+  coinPickupAudioSource: {fileID: 0}
 --- !u!95 &3276021639723851122
 Animator:
   serializedVersion: 5

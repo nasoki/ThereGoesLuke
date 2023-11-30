@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 7172847727011044029}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2690054998007912574
 SpriteRenderer:
@@ -128,9 +128,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastOrigin: {fileID: 7172847727011044029}
-  raycastDistance: 5
+  raycastDistance: 3
   rb2d: {fileID: 6813184222078197439}
   deathUI: {fileID: 0}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 0}
 --- !u!61 &7347638464717164442
 BoxCollider2D:
   m_ObjectHideFlags: 0

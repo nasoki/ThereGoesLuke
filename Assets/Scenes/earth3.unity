@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &790303
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -329,9 +331,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8359166480797379590}
     - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: moveDistance
       value: 4.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 7891712523605073959, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -534,6 +544,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &120916134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -678,6 +690,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &128786421
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1084,6 +1098,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &265806316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4640,6 +4656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!212 &271766790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4749,6 +4767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4898,6 +4920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4999,6 +5025,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!212 &322796726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5108,6 +5136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5345,6 +5377,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &347789023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5437,6 +5471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &357420798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5633,6 +5669,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &425997750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5725,6 +5763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &465743752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5869,6 +5909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &482350333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6013,6 +6055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!212 &515090419
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6300,6 +6344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6455,6 +6503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -25942,6 +25994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -26070,6 +26126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &858530242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26224,6 +26282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!212 &942632769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26724,6 +26784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &995000555
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26920,6 +26982,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &996519162
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26977,6 +27041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -27038,6 +27106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -27191,6 +27263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1035645233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27335,6 +27409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1063023633
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27392,6 +27468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -27453,6 +27533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -27514,6 +27598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -27580,6 +27668,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -27692,6 +27784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -27845,6 +27941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1172512213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27942,6 +28040,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1220119907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28051,6 +28151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -28147,6 +28251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1302275812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28418,6 +28524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!212 &1344847642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28703,6 +28811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1408699275
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28765,6 +28875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -28876,9 +28990,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8359166480797379590}
     - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: moveDistance
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 7891712523605073959, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -29103,6 +29225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!212 &1619130965
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29299,6 +29423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1625961848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29572,6 +29698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -29668,6 +29798,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1820339794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29864,6 +29996,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1833698298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30045,6 +30179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1882477765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30297,6 +30433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -30358,6 +30498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -30511,6 +30655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1986939513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30603,6 +30749,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &1996450073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30712,6 +30860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -30808,6 +30960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 8359166480797379590}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!61 &2033068379
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30917,6 +31071,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -31061,6 +31219,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 8359166480797379590}
+    - target: {fileID: 590258407644293449, guid: 03a74dbc623e1a641878273096037d71, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 753493379573446835, guid: 03a74dbc623e1a641878273096037d71, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -31109,6 +31271,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 8359166480797379590}
+    - target: {fileID: 3427144624067877223, guid: 03a74dbc623e1a641878273096037d71, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 4456331572325793142, guid: 03a74dbc623e1a641878273096037d71, type: 3}
       propertyPath: groundCheck
       value: 
@@ -31121,6 +31287,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 8359166480797379590}
+    - target: {fileID: 8037666705931855944, guid: 03a74dbc623e1a641878273096037d71, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31142,13 +31312,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3200972033747913512, guid: 593ae6c491c46a341b6ab3b43826501c, type: 3}
+      propertyPath: parallaxScalesY.Array.data[0]
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200972033747913512, guid: 593ae6c491c46a341b6ab3b43826501c, type: 3}
+      propertyPath: parallaxScalesY.Array.data[1]
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200972033747913512, guid: 593ae6c491c46a341b6ab3b43826501c, type: 3}
+      propertyPath: parallaxScalesY.Array.data[5]
+      value: -44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200972033747913512, guid: 593ae6c491c46a341b6ab3b43826501c, type: 3}
+      propertyPath: parallaxScalesY.Array.data[6]
+      value: -44
+      objectReference: {fileID: 0}
     - target: {fileID: 8586012463811983725, guid: 593ae6c491c46a341b6ab3b43826501c, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8586012463811983725, guid: 593ae6c491c46a341b6ab3b43826501c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.5
+      value: -8.25
       objectReference: {fileID: 0}
     - target: {fileID: 8586012463811983725, guid: 593ae6c491c46a341b6ab3b43826501c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31283,6 +31469,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 8359166480797379590}
+    - target: {fileID: 4628096409031015034, guid: b9156fc6dcbae2e46b6fe248f86118ec, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 4727191825332259996, guid: b9156fc6dcbae2e46b6fe248f86118ec, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -31331,10 +31521,18 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 8359166480797379590}
+    - target: {fileID: 9026038685619919997, guid: b9156fc6dcbae2e46b6fe248f86118ec, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9047310448310265832, guid: b9156fc6dcbae2e46b6fe248f86118ec, type: 3}
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 8359166480797379590}
+    - target: {fileID: 9047310448310265832, guid: b9156fc6dcbae2e46b6fe248f86118ec, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31416,6 +31614,10 @@ PrefabInstance:
       propertyPath: coinsContainer
       value: 
       objectReference: {fileID: 1149828836}
+    - target: {fileID: 8348714800732328099, guid: e801b9d59473cb048a25cb46011ce139, type: 3}
+      propertyPath: endOfLevelSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9113666551696330144, guid: e801b9d59473cb048a25cb46011ce139, type: 3}
       propertyPath: m_Name
       value: Finish
@@ -31593,6 +31795,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd5eb641220a6846a417aaaebb5b66e, type: 3}
+--- !u!82 &5326999113788707373 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7321938061948228990, guid: 0bd5eb641220a6846a417aaaebb5b66e, type: 3}
+  m_PrefabInstance: {fileID: 5326999113788707372}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6764539161607545146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2869834315182363800, guid: 0bd5eb641220a6846a417aaaebb5b66e, type: 3}
@@ -31606,6 +31813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 551584137910868853, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+      propertyPath: playerAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 605119587410812708, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
       propertyPath: m_RootOrder
       value: 1

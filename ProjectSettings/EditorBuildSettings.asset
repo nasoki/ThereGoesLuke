@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/icicle1.unity
     guid: 6c2c26cced2a93b4ca2593404537f67f
+  - enabled: 1
+    path: Assets/Scenes/icicle2.unity
+    guid: 7a3c4455922d73341b2557d03a776ff6
+  - enabled: 1
+    path: Assets/Scenes/icicle3.unity
+    guid: a11f55055a264c442ac1a46761003547
+  - enabled: 1
+    path: Assets/Scenes/icicle4.unity
+    guid: 5b564d3fccbcaf149bc97a191375218e
   m_configObjects: {}

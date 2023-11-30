@@ -144,6 +144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 0}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 0}
 --- !u!1 &2075016599996773583
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +184,7 @@ Transform:
   - {fileID: 1880026195778224810}
   - {fileID: 7732596335231526131}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4542293628313423492
 Rigidbody2D:
@@ -499,6 +501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 0}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 0}
 --- !u!1 &4018380257276844250
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 0}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 0}
 --- !u!1 &4686459390904853894
 GameObject:
   m_ObjectHideFlags: 0

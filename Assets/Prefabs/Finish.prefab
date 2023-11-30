@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EndOfLevelUI: {fileID: 0}
+  endOfLevelSound: {fileID: 8300000, guid: a13123a141deed7439334029890496ab, type: 3}
+  endOfLevelSource: {fileID: 0}
   gameManager: {fileID: 0}
   coinsContainer: {fileID: 0}
   Star_1: {fileID: 0}

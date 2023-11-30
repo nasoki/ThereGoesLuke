@@ -581,7 +581,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 295558326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739343564}
+        m_TargetAssemblyTypeName: MainMenuHandle, Assembly-CSharp
+        m_MethodName: BeginIcicle3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &295558326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1995,7 +2007,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 778847660}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739343564}
+        m_TargetAssemblyTypeName: MainMenuHandle, Assembly-CSharp
+        m_MethodName: BeginIcicle2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &778847660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2656,7 +2680,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 947151758}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739343564}
+        m_TargetAssemblyTypeName: MainMenuHandle, Assembly-CSharp
+        m_MethodName: BeginIcicle4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &947151758
 MonoBehaviour:
   m_ObjectHideFlags: 0

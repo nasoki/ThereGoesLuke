@@ -267,6 +267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 0}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 0}
 --- !u!61 &9042771906538167081
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -350,7 +352,7 @@ Transform:
   - {fileID: 5161287443803792109}
   - {fileID: 715215438596627691}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &567850188962734125
 BoxCollider2D:
@@ -538,6 +540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 0}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 0}
 --- !u!61 &3275967023131123395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -682,6 +686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 0}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 0}
 --- !u!61 &2020502275936742094
 BoxCollider2D:
   m_ObjectHideFlags: 0

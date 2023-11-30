@@ -9,6 +9,8 @@ using UnityEngine;
 public class LevelEndHandle : MonoBehaviour
 {
     [SerializeField] private GameObject EndOfLevelUI;
+    public AudioClip endOfLevelSound;
+    public AudioSource endOfLevelSource;
     public GameManager gameManager;
     public GameObject coinsContainer;
     public GameObject Star_1;
@@ -38,6 +40,8 @@ public class LevelEndHandle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            endOfLevelSource.clip = endOfLevelSound;
+            endOfLevelSource.Play();
             endingCoins = FinalCoinsCollected(coinsContainer);
             coinsCollected = beginningCoins - endingCoins;
             finalCoinPercentage = Convert.ToInt32((coinsCollected / (float)beginningCoins) * 100);

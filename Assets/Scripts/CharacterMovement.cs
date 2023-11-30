@@ -3,11 +3,13 @@ using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour
 {
+    public AudioSource playerAudioSource;
+    public AudioClip playerJumpSound;
     public float moveSpeed = 5.0f;
     public float jumpForce = 10.0f;
     private float horizontalMove;
-    private bool moveLeft;
-    private bool moveRight;
+    public bool moveLeft;
+    public bool moveRight;
     private bool isGrounded = false;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -106,6 +108,8 @@ public class CharacterMovement : MonoBehaviour
     {
         if (isGrounded)
         {
+            playerAudioSource.clip = playerJumpSound;
+            playerAudioSource.Play();
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             //playerAC.Play("Player_JumpAnimation");
         }

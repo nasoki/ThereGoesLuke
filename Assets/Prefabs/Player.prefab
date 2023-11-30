@@ -123,8 +123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b025486dc5094f468978df150690b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAudioSource: {fileID: 0}
+  playerJumpSound: {fileID: 8300000, guid: a7c4105cae8b4354680cf13a07196bf0, type: 3}
   moveSpeed: 310
   jumpForce: 11.5
+  moveLeft: 0
+  moveRight: 0
   playerAC: {fileID: 6559340386873973721}
   groundRayObject: {fileID: 8766270850244632838}
   groundRayObject2: {fileID: 7293027608830654084}

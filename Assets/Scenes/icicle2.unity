@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -414,17 +418,93 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96846295}
   m_Enabled: 1
-  m_Tiles: {}
+  m_Tiles:
+  - first: {x: 8, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 12, y: 7, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 13, y: 7, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 74, y: 9, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
-  m_TileAssetArray: []
-  m_TileSpriteArray: []
-  m_TileMatrixArray: []
-  m_TileColorArray: []
+  m_TileAssetArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: fa43026564bf45c48b21a355335bf82d, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 539eda85a34893942a07cc04733c984d, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 6bba5eb44ab1dd4479aed9aa6b703b3e, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 8da537d0eae572049a5a2a7237a646ee, type: 2}
+  m_TileSpriteArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 196195481, guid: dc1637a5c9b266348be21ee9303fb847, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1159110542, guid: dc1637a5c9b266348be21ee9303fb847, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 605788687, guid: dc1637a5c9b266348be21ee9303fb847, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1595592818, guid: dc1637a5c9b266348be21ee9303fb847, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 4
+    m_Data:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_TileColorArray:
+  - m_RefCount: 4
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 0, y: 0, z: 1}
+  m_Size: {x: 75, y: 10, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -456,6 +536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1199,6 +1283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1260,6 +1348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1371,9 +1463,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1737167205}
     - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: moveDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 7891712523605073959, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
@@ -1400,6 +1500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1651,6 +1755,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 2930549928044259278, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 5099630251462904403, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
       propertyPath: m_Name
       value: SnowVerticalPlatform (1)
@@ -1703,6 +1811,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 7710945635702925475, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 8025766363637593106, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
       propertyPath: distance
       value: 5
@@ -1711,6 +1823,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 8758793710814671543, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1762,6 +1878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1868,9 +1988,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1737167205}
     - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: moveDistance
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 7891712523605073959, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -1897,6 +2025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2014,9 +2146,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1737167205}
     - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: moveDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6847259493845649044, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 7891712523605073959, guid: 0b39fd124d3860d43821d7f19534b97f, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -2112,6 +2252,10 @@ PrefabInstance:
       propertyPath: coinsContainer
       value: 
       objectReference: {fileID: 1149828836}
+    - target: {fileID: 8348714800732328099, guid: e801b9d59473cb048a25cb46011ce139, type: 3}
+      propertyPath: endOfLevelSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9113666551696330144, guid: e801b9d59473cb048a25cb46011ce139, type: 3}
       propertyPath: m_Name
       value: Finish
@@ -2133,6 +2277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10456,6 +10604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10522,6 +10674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10583,6 +10739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10699,6 +10859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10760,6 +10924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11035,6 +11203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11183,7 +11355,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633710904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.5, y: -17, z: 0}
+  m_LocalPosition: {x: 48.5, y: -9.75, z: 0}
   m_LocalScale: {x: 90.56005, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11248,6 +11420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathUI: {fileID: 1737167205}
+  failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  failSoundSource: {fileID: 5326999113788707373}
 --- !u!1001 &1642673681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11260,6 +11434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11321,6 +11499,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11387,6 +11569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11458,6 +11644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11656,7 +11846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957485090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.5, y: -21.5, z: 0}
+  m_LocalPosition: {x: 48.5, y: -11.25, z: 0}
   m_LocalScale: {x: 90.56005, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11680,6 +11870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2153968696798543307, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
+      propertyPath: coinPickupAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 9020216384426674315, guid: f96efd7fb209a3549aada33f2c7ba50d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11780,6 +11974,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 858443922009598328, guid: 6d2ba3e7ac0e35c4cbde3b09145e90c2, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 2873639781700655204, guid: 6d2ba3e7ac0e35c4cbde3b09145e90c2, type: 3}
       propertyPath: distance
       value: 3
@@ -11788,6 +11986,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 3618970123852571753, guid: 6d2ba3e7ac0e35c4cbde3b09145e90c2, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 3975194319223547806, guid: 6d2ba3e7ac0e35c4cbde3b09145e90c2, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11840,6 +12042,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 7330487418779044877, guid: 6d2ba3e7ac0e35c4cbde3b09145e90c2, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11933,6 +12139,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 2930549928044259278, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 5099630251462904403, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
       propertyPath: m_Name
       value: SnowVerticalPlatform
@@ -11985,6 +12195,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 7710945635702925475, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 8025766363637593106, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
       propertyPath: distance
       value: 7
@@ -11993,6 +12207,10 @@ PrefabInstance:
       propertyPath: deathUI
       value: 
       objectReference: {fileID: 1737167205}
+    - target: {fileID: 8758793710814671543, guid: 95350ced438fb0d4f84640753ea8fdfe, type: 3}
+      propertyPath: failSoundSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12174,6 +12392,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd5eb641220a6846a417aaaebb5b66e, type: 3}
+--- !u!82 &5326999113788707373 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7321938061948228990, guid: 0bd5eb641220a6846a417aaaebb5b66e, type: 3}
+  m_PrefabInstance: {fileID: 5326999113788707372}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6505531780231047412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12304,6 +12527,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 310
       objectReference: {fileID: 0}
+    - target: {fileID: 551584137910868853, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+      propertyPath: playerAudioSource
+      value: 
+      objectReference: {fileID: 5326999113788707373}
     - target: {fileID: 605119587410812708, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
       propertyPath: m_RootOrder
       value: 1

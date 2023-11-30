@@ -3,7 +3,11 @@ guid: b42d153afd0f88345854015749c4eae2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - deathUI: {instanceID: 0}
+  - animatorController: {instanceID: 0}
+  - failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
+  - failSoundSource: {fileID: 7321938061948228990, guid: 0bd5eb641220a6846a417aaaebb5b66e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -6,6 +6,8 @@ public class Icicles : MonoBehaviour
     public float raycastDistance = 5f;  // Set the desired raycast distance in the Inspector
     public Rigidbody2D rb2d;
     [SerializeField] private GameObject deathUI;
+    public AudioClip failSound;
+    public AudioSource failSoundSource;
     void Update()
     {
         // Cast the ray from the raycastOrigin downward
@@ -33,6 +35,8 @@ public class Icicles : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            failSoundSource.clip = failSound;
+            failSoundSource.Play();
             deathUI.SetActive(true);
             Time.timeScale = 0f;
         }

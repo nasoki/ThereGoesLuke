@@ -5,6 +5,8 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] private GameObject deathUI;
     [SerializeField] private Animator animatorController;
+    public AudioClip failSound;
+    public AudioSource failSoundSource;
     private Rigidbody2D rb;
     public float moveSpeed = 2.0f;
     public float moveDistance = 4.0f;
@@ -78,6 +80,8 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            failSoundSource.clip = failSound;
+            failSoundSource.Play();
             deathUI.SetActive(true);
             Time.timeScale = 0;
         }
