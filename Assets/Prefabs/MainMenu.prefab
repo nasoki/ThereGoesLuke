@@ -5142,7 +5142,7 @@ Transform:
   - {fileID: 4788729623411872483}
   - {fileID: 8543121757623507055}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5932837410201451614
 GameObject:
@@ -7731,7 +7731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4788729623411872483}
   - component: {fileID: 7395788210490008424}
-  - component: {fileID: 4015922368525524888}
   m_Layer: 0
   m_Name: MainMenuHandler
   m_TagString: Untagged
@@ -7766,7 +7765,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: affb64d8a6ea3ab4684ab1bdfa7b0b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuStars: {fileID: 4015922368525524888}
+  EndOfLevelUI: {fileID: 0}
+  endOfLevelSound: {fileID: 0}
+  endOfLevelSource: {fileID: 0}
+  gameManager: {fileID: 0}
+  coinsContainer: {fileID: 0}
+  Star_1: {fileID: 0}
+  Star_2: {fileID: 0}
+  Star_3: {fileID: 0}
+  starRating: 0
+  exportStar: 0
+  exportLevel: 0
   levelsMenuGO: {fileID: 6692579118063107935}
   earthMenuGO: {fileID: 1020203659736639465}
   icicleMenuGO: {fileID: 3551297426162046002}
@@ -7775,19 +7784,33 @@ MonoBehaviour:
   level1Star3: {fileID: 4868508280243204735}
   level2Star1: {fileID: 3792030029740661882}
   level2Star2: {fileID: 5932837410201451614}
---- !u!114 &4015922368525524888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8789200360715588850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe1c7f6132007c24c917aecd71933d99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCount: 
+  level2Star3: {fileID: 0}
+  level3Star1: {fileID: 0}
+  level3Star2: {fileID: 0}
+  level3Star3: {fileID: 0}
+  level4Star1: {fileID: 0}
+  level4Star2: {fileID: 0}
+  level4Star3: {fileID: 0}
+  level5Star1: {fileID: 0}
+  level5Star2: {fileID: 0}
+  level5Star3: {fileID: 0}
+  level6Star1: {fileID: 0}
+  level6Star2: {fileID: 0}
+  level6Star3: {fileID: 0}
+  level7Star1: {fileID: 0}
+  level7Star2: {fileID: 0}
+  level7Star3: {fileID: 0}
+  level8Star1: {fileID: 0}
+  level8Star2: {fileID: 0}
+  level8Star3: {fileID: 0}
+  level1Stars: []
+  level2Stars: []
+  level3Stars: []
+  level4Stars: []
+  level5Stars: []
+  level6Stars: []
+  level7Stars: []
+  level8Stars: []
 --- !u!1 &9114975185605749161
 GameObject:
   m_ObjectHideFlags: 0

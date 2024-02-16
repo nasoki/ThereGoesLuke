@@ -1,10 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text.RegularExpressions;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -77,14 +71,6 @@ public class LevelEndHandle : MonoBehaviour
 
                 starRating = 1;
                 Star_1.SetActive(true);
-            }
-            else
-            {
-                if (PlayerPrefs.GetString("LevelAndStarStatus") + SceneManager.GetActiveScene().buildIndex != SceneManager.GetActiveScene().buildIndex.ToString() + "3" || PlayerPrefs.GetString("LevelAndStarStatus") + SceneManager.GetActiveScene().buildIndex != SceneManager.GetActiveScene().buildIndex.ToString() + "2" || PlayerPrefs.GetString("LevelAndStarStatus") + SceneManager.GetActiveScene().buildIndex != SceneManager.GetActiveScene().buildIndex.ToString() + "1")
-                {
-                    PlayerPrefs.SetString("LevelAndStarStatus" + SceneManager.GetActiveScene().buildIndex, SceneManager.GetActiveScene().buildIndex.ToString() + "0");
-                }
-                starRating = 0;
             }
             gameManager.ShowFinalScore();
             EndOfLevelUI.SetActive(true);
