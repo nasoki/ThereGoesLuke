@@ -38,4 +38,5 @@ public class HorizontalPlatformMovement : MonoBehaviour
             isMovingRight = !isMovingRight;
         }
     }
+
 }

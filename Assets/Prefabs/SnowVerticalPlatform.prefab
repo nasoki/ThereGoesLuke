@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 4039549087876963974}
   - component: {fileID: 7710945635702925475}
   - component: {fileID: 9042771906538167081}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,6 +269,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!61 &9042771906538167081
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -453,7 +455,7 @@ GameObject:
   - component: {fileID: 4649876424642977178}
   - component: {fileID: 2930549928044259278}
   - component: {fileID: 3275967023131123395}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,6 +544,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!61 &3275967023131123395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -599,7 +603,7 @@ GameObject:
   - component: {fileID: 9050917510748702376}
   - component: {fileID: 8758793710814671543}
   - component: {fileID: 2020502275936742094}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,6 +692,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!61 &2020502275936742094
 BoxCollider2D:
   m_ObjectHideFlags: 0

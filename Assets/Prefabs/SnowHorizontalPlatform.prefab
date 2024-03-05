@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7027252899017535426}
   - component: {fileID: 858443922009598328}
   - component: {fileID: 3278587707462782294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,6 +101,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!61 &3278587707462782294
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,7 +160,7 @@ GameObject:
   - component: {fileID: 8283091761839063349}
   - component: {fileID: 3618970123852571753}
   - component: {fileID: 3821315897296161867}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,6 +249,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!61 &3821315897296161867
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -388,7 +392,7 @@ GameObject:
   - component: {fileID: 8530859444221551601}
   - component: {fileID: 7330487418779044877}
   - component: {fileID: 4928552959188000011}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,6 +481,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!61 &4928552959188000011
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2879844081967916161}
   - component: {fileID: 1309563230924572752}
   - component: {fileID: 6847259493845649044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -195,5 +195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathUI: {fileID: 0}
   animatorController: {fileID: 252395194515063485}
+  failSound: {fileID: 0}
+  failSoundSource: {fileID: 0}
   moveSpeed: 2
   moveDistance: 2
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5296604312415032990}
   - component: {fileID: 6711450198663188072}
   - component: {fileID: 9047310448310265832}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,6 +146,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!1 &2075016599996773583
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +371,7 @@ GameObject:
   - component: {fileID: 4878386746556232626}
   - component: {fileID: 168892881315127555}
   - component: {fileID: 4628096409031015034}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,6 +505,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!1 &4018380257276844250
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +519,7 @@ GameObject:
   - component: {fileID: 7315106183923023961}
   - component: {fileID: 8297662764412864478}
   - component: {fileID: 9026038685619919997}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpikeTiles_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,6 +653,8 @@ MonoBehaviour:
   deathUI: {fileID: 0}
   failSound: {fileID: 8300000, guid: 63af92c30e5d6d644a6bbd882d56c6b8, type: 3}
   failSoundSource: {fileID: 0}
+  player: {fileID: 2602085253499989229, guid: 161eb1ffea4126046a398f8bd7401d29, type: 3}
+  getHurtSoundClip: {fileID: 8300000, guid: 79be9c4dca6d1ef48bb65939280b439a, type: 3}
 --- !u!1 &4686459390904853894
 GameObject:
   m_ObjectHideFlags: 0

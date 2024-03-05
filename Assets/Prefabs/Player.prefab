@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 551584137910868853}
   - component: {fileID: 8262082516469332489}
   - component: {fileID: 2763948299907594664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAudioSource: {fileID: 0}
   playerJumpSound: {fileID: 8300000, guid: a7c4105cae8b4354680cf13a07196bf0, type: 3}
-  moveSpeed: 310
+  moveSpeed: 620
   jumpForce: 11.5
   moveLeft: 0
   moveRight: 0

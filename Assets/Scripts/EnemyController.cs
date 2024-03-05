@@ -11,6 +11,8 @@ public class EnemyController : MonoBehaviour
     public float moveSpeed = 2.0f;
     public float moveDistance = 4.0f;
     private SpriteRenderer rbSprite;
+    public GameObject player;
+    public AudioClip getHurtSoundClip;
 
     private Vector2 originalPosition;
     private Vector2 rightmostPosition;
@@ -80,10 +82,29 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            failSoundSource.clip = failSound;
-            failSoundSource.Play();
-            deathUI.SetActive(true);
-            Time.timeScale = 0;
+            HealthManager.health--;
+            if(HealthManager.health <= 0)
+            {
+                failSoundSource.clip = failSound;
+                failSoundSource.Play();
+                deathUI.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                StartCoroutine(GetHurt());
+                failSoundSource.clip = getHurtSoundClip;
+                failSoundSource.Play();
+
+            }
         }
+    }
+    IEnumerator GetHurt()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7);
+        player.GetComponent<Animator>().SetLayerWeight(1, 1);
+        yield return new WaitForSeconds(2);
+        player.GetComponent<Animator>().SetLayerWeight(1, 0);
+        Physics2D.IgnoreLayerCollision(6, 7, false);
     }
 }

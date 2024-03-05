@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class Icicles : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class Icicles : MonoBehaviour
     [SerializeField] private GameObject deathUI;
     public AudioClip failSound;
     public AudioSource failSoundSource;
+    public GameObject player;
+    public AudioClip getHurtSoundClip;
+
     void Update()
     {
         // Cast the ray from the raycastOrigin downward
@@ -33,16 +38,35 @@ public class Icicles : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            failSoundSource.clip = failSound;
-            failSoundSource.Play();
-            deathUI.SetActive(true);
-            Time.timeScale = 0f;
+            HealthManager.health--;
+            if (HealthManager.health <= 0)
+            {
+                failSoundSource.clip = failSound;
+                failSoundSource.Play();
+                deathUI.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                StartCoroutine(GetHurt());
+                failSoundSource.clip = getHurtSoundClip;
+                failSoundSource.Play();
+            }
         }
-        else if (collision.gameObject.CompareTag("Ground"))
+        else
         {
             Destroy(gameObject);
         }
     }
+    IEnumerator GetHurt()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7);
+        player.GetComponent<Animator>().SetLayerWeight(1, 1);
+        yield return new WaitForSeconds(2);
+        player.GetComponent<Animator>().SetLayerWeight(1, 0);
+        Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
+
 }
